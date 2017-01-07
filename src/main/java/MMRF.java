@@ -3213,7 +3213,7 @@ abstract class AbstractNeuralNetwork implements ICostFunction {
 			int count = 0;
 			for (int rows = 1; rows <= theta.rowLength(); rows++ ) {
 				for (int cols = 1; cols <= theta.colLength(); cols++) {
-					theta.setVal(rows, cols, rand.nextDouble() * 2.0 * e - e);
+					theta.setVal(rows, cols, 0.0); //rand.nextDouble() * 2.0 * e - e);
 				}
 			}
 			
